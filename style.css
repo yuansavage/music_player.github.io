@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+* {
+  font-family: Spartan, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  top: 50px;
+  background-color: #ececec;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.player-container .image-container {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  left: 50px;
+}
+.player-container .image-container img {
+  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.3);
+}
+.player-container .progress-container {
+  width: 90%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 40px 20px;
+  cursor: pointer;
+}
+.player-container .progress-container .progress {
+  background-color: black;
+  width: 0%;
+  height: 100%;
+  border-radius: 15px;
+  transition: width 0.1s linear;
+}
+.player-container .progress-container .duration-wrapper {
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+.player-container .play-buttons {
+  top: -20px;
+  left: 120px;
+  width: 200px;
+}
+.player-container .play-buttons .fas {
+  font-size: 20px;
+  color: #818181;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.player-container .play-buttons .fas:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.player-container .play-buttons .main-button {
+  font-size: 30px;
+  top: 3px;
+}
+
+#artist {
+  font-weight: 10;
+}
