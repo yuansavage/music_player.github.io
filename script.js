@@ -51,8 +51,8 @@ function loadSong(song){
     //如果是相同值textContent則不會重新load，但innerText會
     title.textContent = song.name;
     artist.textContent = song.artist;
-    music.src = `../music/${song.file}.mp3`;
-    image.src = `../img/${song.file}.jpg`;
+    music.src = `./music/${song.file}.mp3`;
+    image.src = `./img/${song.file}.jpg`;
 }
 
 //prevSong
